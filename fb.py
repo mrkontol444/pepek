@@ -50,7 +50,7 @@ def login(user,pw,cek=False):
                   with open('valid.txt') as f:
                        f.write(user + '|' + pw + '\n')
           elif 'www.facebook.com' in q['error_msg']:
-             print('\r\033[00m[\033[93mCSedang ngentot\033[00m]'+user+'\033[96m|\033[00m'+pw                        ,end="")
+             print('\r\033[00m[\033[93mCSedang ngentot \033[00m]'+user+'\033[96m|\033[00m'+pw                        ,end="")
              chek+=1
              if cek:
                   check.append(user+'|'+pw)
